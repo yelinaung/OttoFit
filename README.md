@@ -1,4 +1,4 @@
 OttoFit
 =======
 
-Otto + Retrofit + OkHttp + Phrase Gson
+Otto + Retrofit without `AsyncTask`
