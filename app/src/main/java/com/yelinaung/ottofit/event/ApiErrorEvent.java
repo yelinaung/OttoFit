@@ -1,4 +1,4 @@
-package com.yelinaung.ottogithub.event;
+package com.yelinaung.ottofit.event;
 
 import retrofit.RetrofitError;
 

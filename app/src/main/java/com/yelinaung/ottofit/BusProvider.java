@@ -1,4 +1,4 @@
-package com.yelinaung.ottogithub;
+package com.yelinaung.ottofit;
 
 import com.squareup.otto.Bus;
 

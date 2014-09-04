@@ -1,6 +1,6 @@
-package com.yelinaung.ottogithub.event;
+package com.yelinaung.ottofit.event;
 
-import com.yelinaung.ottogithub.model.GitHub;
+import com.yelinaung.ottofit.model.GitHub;
 
 /**
  * Created by Ye Lin Aung on 14/09/02.

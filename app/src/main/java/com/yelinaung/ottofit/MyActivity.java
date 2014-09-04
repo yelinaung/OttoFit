@@ -1,4 +1,4 @@
-package com.yelinaung.ottogithub;
+package com.yelinaung.ottofit;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -19,11 +19,12 @@ import butterknife.InjectView;
 import butterknife.OnClick;
 import com.squareup.otto.Subscribe;
 import com.squareup.phrase.Phrase;
-import com.yelinaung.ottogithub.event.ApiErrorEvent;
-import com.yelinaung.ottogithub.event.RepoFoundEvent;
-import com.yelinaung.ottogithub.event.SearchRepoEvent;
-import com.yelinaung.ottogithub.model.GitHub;
-import com.yelinaung.ottogithub.model.Item;
+import com.yelinaung.ottogithub.R;
+import com.yelinaung.ottofit.event.ApiErrorEvent;
+import com.yelinaung.ottofit.event.RepoFoundEvent;
+import com.yelinaung.ottofit.event.SearchRepoEvent;
+import com.yelinaung.ottofit.model.GitHub;
+import com.yelinaung.ottofit.model.Item;
 import retrofit.Callback;
 import retrofit.RetrofitError;
 import retrofit.client.Response;

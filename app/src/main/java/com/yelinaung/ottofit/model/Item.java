@@ -1,4 +1,4 @@
-package com.yelinaung.ottogithub.model;
+package com.yelinaung.ottofit.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

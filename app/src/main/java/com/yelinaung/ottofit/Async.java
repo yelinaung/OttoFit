@@ -1,7 +1,7 @@
-package com.yelinaung.ottogithub;
+package com.yelinaung.ottofit;
 
 import com.squareup.okhttp.OkHttpClient;
-import com.yelinaung.ottogithub.model.GitHub;
+import com.yelinaung.ottofit.model.GitHub;
 import retrofit.Callback;
 import retrofit.RestAdapter;
 import retrofit.client.OkClient;
