@@ -42,9 +42,10 @@ public class MyActivity extends Activity {
     ButterKnife.inject(this);
   }
 
-  @OnClick(R.id.search_btn) public void searchRepo() {
+  @SuppressWarnings("unused") @OnClick(R.id.search_btn) public void searchRepo() {
     BusProvider.getInstance().post(new SearchRepoEvent());
     showProgress(true);
+    result.setText("");
   }
 
   @Subscribe public void onRepoSearch(SearchRepoEvent event) {
@@ -79,7 +80,7 @@ public class MyActivity extends Activity {
 
   @Subscribe public void onSearchError(ApiErrorEvent event) {
     showProgress(false);
-    Toast.makeText(this, event.error.getCause().toString(), Toast.LENGTH_SHORT).show();
+    Toast.makeText(this, event.error.getMessage(), Toast.LENGTH_SHORT).show();
     Log.i("error", event.error.getMessage());
   }
 
