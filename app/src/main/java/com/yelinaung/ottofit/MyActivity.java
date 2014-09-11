@@ -19,12 +19,12 @@ import butterknife.InjectView;
 import butterknife.OnClick;
 import com.squareup.otto.Subscribe;
 import com.squareup.phrase.Phrase;
-import com.yelinaung.ottogithub.R;
 import com.yelinaung.ottofit.event.ApiErrorEvent;
 import com.yelinaung.ottofit.event.RepoFoundEvent;
 import com.yelinaung.ottofit.event.SearchRepoEvent;
 import com.yelinaung.ottofit.model.GitHub;
 import com.yelinaung.ottofit.model.Item;
+import com.yelinaung.ottogithub.R;
 import retrofit.Callback;
 import retrofit.RetrofitError;
 import retrofit.client.Response;
@@ -44,9 +44,13 @@ public class MyActivity extends Activity {
   }
 
   @SuppressWarnings("unused") @OnClick(R.id.search_btn) public void searchRepo() {
-    BusProvider.getInstance().post(new SearchRepoEvent());
-    showProgress(true);
-    result.setText("");
+    if (repoName.getText().toString().trim().length() == 0) {
+      repoName.setError("Please enter a repo name");
+    } else {
+      BusProvider.getInstance().post(new SearchRepoEvent());
+      showProgress(true);
+      result.setText("");
+    }
   }
 
   @Subscribe public void onRepoSearch(SearchRepoEvent event) {
