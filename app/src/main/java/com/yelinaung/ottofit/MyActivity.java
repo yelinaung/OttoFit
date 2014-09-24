@@ -24,7 +24,6 @@ import com.yelinaung.ottofit.event.RepoFoundEvent;
 import com.yelinaung.ottofit.event.SearchRepoEvent;
 import com.yelinaung.ottofit.model.GitHub;
 import com.yelinaung.ottofit.model.Item;
-import com.yelinaung.ottogithub.R;
 import retrofit.Callback;
 import retrofit.RetrofitError;
 import retrofit.client.Response;

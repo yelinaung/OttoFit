@@ -17,7 +17,7 @@ import android.graphics.drawable.shapes.RectShape;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.widget.Button;
-import com.yelinaung.ottogithub.R;
+import com.yelinaung.ottofit.R;
 
 /**
  * Ripple View from https://github.com/siriscac/RippleView
